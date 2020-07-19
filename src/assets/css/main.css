@@ -119,7 +119,7 @@ header .header__nav ul li a:hover{
 
 
 
-.header-content__btn{
+.btn{
     padding:10px 15px;
     border: 1px solid #00e0d0;
     text-transform: uppercase;
@@ -130,7 +130,7 @@ header .header__nav ul li a:hover{
     transition: all .2s linear;
 }
 
-.header-content__btn:hover{
+.btn:hover{
     color:#fff;
     background:#00e0d0;
 }
@@ -173,6 +173,72 @@ header .header__nav ul li a:hover{
 .slider-indicators__item.active{
     background:#00e0d0;
     border: 1px solid #00e0d0;
+}
+
+/* End of Header ---------------- */
+/* Story section----------------- */
+.story .story__wrapper{
+    display: flex;
+    padding: 70px 0 103px;
+    justify-content: space-between;
+}
+
+.story__img img{
+    width: 235px;
+    height: 229px;
+    margin-left: 85px;
+}
+
+.story__title{
+    font-family: 'Playfair Display';
+    font-size:22px;
+    letter-spacing: 1.1px;
+    margin-bottom: 25px;
+}
+
+.story__text{
+    opacity: 0.75;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    margin-bottom: 31px;
+}
+
+/* End of Story block */
+
+.video{
+    position: relative;
+    background: url('/src/assets/img/video-bg.png') no-repeat;
+    background-size: cover;
+    height:550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__play{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.video__play img{
+    margin-left: 8px;
+}
+
+.video__text{
+    position: relative;
+    top:80px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    font-family: 'Roboto';
+    color: #ffffff;
 }
 
 

@@ -17,10 +17,6 @@ const sliders = () =>{
         slide.style.width = slideWidth
     })
 
-
-
-
-    
     /* Functionality for auto toggle slider */
 
     const autoSlider = () => {
@@ -72,9 +68,6 @@ const sliders = () =>{
     indicatorPanel.addEventListener('mouseleave', () => {
         autoSlider()
     })
-
-
-
 
     /* RegExp for computed width */
 
