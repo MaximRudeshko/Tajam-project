@@ -98,12 +98,15 @@ header .header__nav ul li a:hover{
     letter-spacing: 0.32px;
 }
 
-.header__content .line{
-    height: 1px;
+.line{
+    height: 2px;
     width: 50px;
+    
+}
+
+.line-header{
     background-color:#00e0d0;
     margin: 10px auto 15px;
-    
 }
 
 .header-content__text{
@@ -179,7 +182,7 @@ header .header__nav ul li a:hover{
 /* Story section----------------- */
 .story .story__wrapper{
     display: flex;
-    padding: 70px 0 103px;
+    padding-top: 70px;
     justify-content: space-between;
 }
 
@@ -204,7 +207,13 @@ header .header__nav ul li a:hover{
     margin-bottom: 31px;
 }
 
+.story button{
+    margin-bottom:70px
+}
+
 /* End of Story block */
+
+/* Video */
 
 .video{
     position: relative;
@@ -258,6 +267,72 @@ header .header__nav ul li a:hover{
     bottom:15px;
     left:10px;
     color:#ffffff
+}
+
+/* End of Video */
+
+.expertise__wrapper{
+    padding: 71px 0 68px;
+    text-align: center;
+}
+
+.expertise__title{
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b;
+    letter-spacing: 1.1px;
+    font-family: "Playfair Display";
+    margin-bottom: 10px;
+}
+
+.expertise__subtitle{
+    opacity: .75;
+    color: #2f2d35;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.05px;
+    
+}
+ 
+.expertise .line{
+    background-color: #413d4b;
+    margin: 18px auto 48px; 
+}
+
+.expertise-content__item{
+    padding: 32px 33px 39px 23px;
+}
+
+.content-item__img{
+    margin-bottom: 35px;
+}
+
+.content-item__name{
+    color: #413d4b;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    margin-bottom: 25px;
+}
+
+.content-item__text{
+    opacity: 0.75;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.7px;
+}
+
+.expertise__content .row:nth-child(2){
+    border-top:1px solid #ebebeb
+}
+
+.expertise__content .row .expertise-content__item:nth-child(2){
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
 }
 
 
