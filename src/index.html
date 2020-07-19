@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <title>Langing</title>
@@ -99,13 +100,21 @@
         </div>
     </section>
     <!-- End of Story Section ---------------------->
+    <!-- Video-------------------------------------->
     <section class="video">
         <div class="overlay"></div>
-        <div class="video__play">
+        <div class="video__play" data-play="UnWpnKps7DI">
             <img src="/src/assets/img/play.png" alt="">
         </div>
         <span class="video__text">WATCH OUR STORY</span>
     </section>
+    <div class="video__overlay">
+        <div class="video__wrap">
+            <div id="player"></div>
+        <i class="fa fa-times close"></i>
+        </div>
+    </div>
     <script src="js/modules/slider.js"></script>
+    <script src="js/modules/video.js"></script>
 </body>
 </html>

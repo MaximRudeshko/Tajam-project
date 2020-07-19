@@ -241,6 +241,25 @@ header .header__nav ul li a:hover{
     color: #ffffff;
 }
 
+.video__overlay{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    justify-content: center;
+    align-items:center
+}
+
+.video__overlay .close{
+    position: relative;
+    bottom:15px;
+    left:10px;
+    color:#ffffff
+}
+
 
   
 
