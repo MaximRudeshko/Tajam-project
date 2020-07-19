@@ -131,6 +131,7 @@ header .header__nav ul li a:hover{
     background:none;
     margin-bottom: 207px;
     transition: all .2s linear;
+    border-radius:0;
 }
 
 .btn:hover{
@@ -271,6 +272,7 @@ header .header__nav ul li a:hover{
 
 /* End of Video */
 
+/* Expertise */
 .expertise__wrapper{
     padding: 71px 0 68px;
     text-align: center;
@@ -333,6 +335,90 @@ header .header__nav ul li a:hover{
 .expertise__content .row .expertise-content__item:nth-child(2){
     border-left: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
+}
+
+/* End of Expertise */
+
+/* Team */
+
+.team{
+    background: url('../img/team-bg.png') no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+.team .overlay{
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+}
+
+
+.team .container{
+    padding: 71px 0 69px;
+    position: relative;
+    text-align: center;
+}
+
+
+.team__slogan{
+    color: #ffffff;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
+}
+
+.team__subtitle{
+    color: #f9f9f9;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.05px;
+    margin-bottom: 18px;
+}
+
+.team-line{
+    background: #655c80;
+    margin: 18px auto 47px;
+}
+
+.team__cards{
+    margin-bottom: 70px;
+}
+
+.team-cards__photo{
+    height: 230px;
+    width: 220px;
+    background:#fff;
+    margin-bottom: 23px;
+}
+
+.team-cards__name{
+    font-family: "Roboto";
+    color:#fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.team-cards__prof{
+    opacity: 0.7;
+    color: #fafafa; 
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.team__bottom-subtitle{
+    color: #f3f3f3;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+.team__btn{
+    margin-bottom: 0;
 }
 
 
