@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         close.addEventListener('click', () => {
             modal.style.display = 'none'
             document.body.style.overflow = ''
-            console.log(player)
             player.stopVideo()
         })
     
