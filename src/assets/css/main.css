@@ -556,7 +556,7 @@ header .header__nav ul li a:hover{
     align-items: center;
 }
 
-.tistimonials-slider__items{
+.tistimonials-slider__items, #test{
     display: flex;
     justify-content: space-between;
     width: 350px;
@@ -650,6 +650,74 @@ header .header__nav ul li a:hover{
 .clients__item{
     text-align: center;
 }
+/* End of Contact and Clients --------------- */
+
+/* Footer--------------------- */
+
+footer{
+    background: url('../img/footer-bg.png') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+footer .container{
+    max-width:970px !important;
+    padding: 70px 0;
+}
+
+.footer-info__logo{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.footer-info__logo span{
+    color: #25beca;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 11px;
+}
+
+.footer-info__text p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+}
+
+.footer-adress__title span{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+
+}
+
+.footer-adress__title{
+    padding: 16px 0;
+    display: flex;
+    align-items:center;
+    margin-bottom: 23px;
+}
+
+.footer-adress__text::before{
+    font-family: 'FontAwesome';
+    content: '\f041';
+    margin-right: 30px;
+    height: 100%;
+}
+
+.footer-adress__text{
+    
+}
+
+
+
 
 
 
