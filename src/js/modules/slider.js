@@ -3,23 +3,36 @@ const sliders = () =>{
           sliderWrapper = document.querySelector('.header-slider__wrapper'),
           sliderInner = document.querySelector('.header-slider__inner'),
           slides = document.querySelectorAll('.header-slider__item'),
-          sliderWidth = window.getComputedStyle(sliderWrapper).width,
           indicatorPanel = document.querySelector('.slider__indicators'),
           dots = document.querySelectorAll('.slider-indicators__item')
 
-    let slideWidth = deleteNoDigits(sliderWidth),
-        offset = 0,
+ 
+    let offset = 0,
         current = 0,
-        sliderTimer
+        sliderTimer,
+        sliderWidth,
+        slideWidth
 
-    sliderInner.style.width = `${100 * slides.length}%`
-    slides.forEach(slide => {
-        slide.style.width = slideWidth
-    })
 
+    function setTransform(){
+        sliderWidth = window.getComputedStyle(sliderWrapper).width
+        slideWidth = deleteNoDigits(sliderWidth)
+
+        
+        sliderInner.style.width = `${slideWidth * slides.length}px`
+
+        for(let i = 0; i < slides.length; i++){
+            slides[i].style.width = slideWidth + 'px'
+            console.log(slideWidth)
+        }
+
+    }
+
+    setTransform()
     /* Functionality for auto toggle slider */
 
     const autoSlider = () => {
+        
         sliderTimer = setInterval(() => {
 
             if(offset === slideWidth * (slides.length - 1)){
@@ -34,6 +47,8 @@ const sliders = () =>{
             sliderInner.style.transform = `translateX(${-offset}px)`
     
         },5000)
+        console.log(offset)
+        console.log(slideWidth  )
     }
 
     autoSlider()
@@ -41,7 +56,7 @@ const sliders = () =>{
 
     /* Functionality for indicators */
 
-    const toggleActiveSlide = (i) => {
+    function toggleActiveSlide (i) {
         dots.forEach(item => {
             item.classList.remove('active')
         })
@@ -75,7 +90,16 @@ const sliders = () =>{
         return +str.replace(/\D/g, '')
     }
 
+    window.addEventListener('resize', () => {
+        
+        clearInterval(sliderTimer)
+        setTransform()
+        autoSlider()
+    })
+
 }
 
 sliders();
+
+
 

@@ -39,6 +39,77 @@ header .header__navbar{
     justify-content: space-between;
     padding-top: 15px;
     margin-bottom: 163px;
+    align-items: center;
+
+}
+
+
+.burger{
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+header .burger.closes span:nth-child(1){
+    transform: translate(0px, 5px) rotate(45deg);
+    
+}
+
+header .burger.closes span:nth-child(2){
+    transform: scale(0)
+}
+
+header .burger.closes span:nth-child(3){
+    transform: translate(0px, -8px) rotate(-45deg);
+   
+
+}
+
+.burger span{
+    height: 3px;
+    background-color:#fff;
+    transition: all .2s;
+    display: block;
+}
+
+.close-menu{
+    position: absolute;
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 104%;
+    transition: all .2s ease;
+    z-index: 1111;
+}
+
+.menu.active{
+
+    left: 80%;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:color .2s ease
+
+}
+
+#menu ul li a:hover{
+    color:#10d3d0;
+}
+
+header .container{
+    overflow: hidden;
 }
 
 header .header__logo{
@@ -159,6 +230,7 @@ header .header__nav ul li a:hover{
 
 .header-slider__item{
     width: 100%;
+    text-align: center;
 }
 
 .slider__indicators{
