@@ -16,9 +16,43 @@
     .menu{
         display: block;
     }
+    .menu.active{
+        left:70%
+    }
 
     .burger i{
         color:#fff;
+    }
+
+    .header-content__slogan{
+        font-size: 27px;
+    }
+
+    .line-header{
+        margin: 0 auto 5px;
+    }
+
+    .header-content__text{
+        font-size: 12px;
+    }
+
+    .btn{
+        padding:5px 10px;
+        font-size: 12px;
+        margin-bottom: 70px;
+    }
+
+    /* Story */
+
+    .story__wrapper{
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+
+    .story__img img{
+        margin-left:0;
+        margin-bottom: 10px;
     }
 }
 

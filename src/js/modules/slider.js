@@ -23,7 +23,6 @@ const sliders = () =>{
 
         for(let i = 0; i < slides.length; i++){
             slides[i].style.width = slideWidth + 'px'
-            console.log(slideWidth)
         }
 
     }
@@ -47,8 +46,6 @@ const sliders = () =>{
             sliderInner.style.transform = `translateX(${-offset}px)`
     
         },5000)
-        console.log(offset)
-        console.log(slideWidth  )
     }
 
     autoSlider()

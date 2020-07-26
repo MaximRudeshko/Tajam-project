@@ -51,6 +51,7 @@ header .header__navbar{
     position: relative;
     flex-direction: column;
     justify-content:space-around;
+    z-index: 1000000000000000;
 }
 
 header .burger.closes span:nth-child(1){
@@ -80,7 +81,7 @@ header .burger.closes span:nth-child(3){
 }
 
 .menu {
-    display: block;
+    display: none;
     position: absolute;
     top: 40%;
     left: 104%;
@@ -186,13 +187,12 @@ header .header__nav ul li a:hover{
 
 .header-content__text{
     font-family: 'Roboto', sans-serif;
-    width: 771px;
-    height: 62px;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     margin-bottom: 50px;
+    
 }
 
 
