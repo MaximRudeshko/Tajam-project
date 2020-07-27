@@ -195,6 +195,10 @@ header .header__nav ul li a:hover{
     
 }
 
+.header-content__btn{
+    margin-bottom: 207px;
+}
+
 
 
 .btn{
@@ -204,7 +208,6 @@ header .header__nav ul li a:hover{
     color:#00e0d0;
     font-weight: 700;
     background:none;
-    margin-bottom: 207px;
     transition: all .2s linear;
     border-radius:0;
 }
@@ -214,18 +217,49 @@ header .header__nav ul li a:hover{
     background:#00e0d0;
 }
 
+/* Slick */
+
+.slick-track{
+    display: flex;
+}
+
+.slick-arrow{
+    position:absolute;
+    z-index:10000
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: space-between;
+    width: 54px;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 70px;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color:transparent;
+    border: 1px solid #c2c2c2;
+    border-radius: 50%;
+    position: relative;
+}
+
+.slick-dots li.slick-active button{
+    background:#00e0d0;
+    border: 1px solid #00e0d0;
+
+}
+
+
 .header__slider{
     width: 100%;
 }
 
 .header-slider__wrapper{
     overflow: hidden;
-}
-
-.header-slider__inner{
-    display: flex;
-    justify-content: space-between;
-    transition: all 1s; 
 }
 
 .header-slider__item{
@@ -404,14 +438,22 @@ header .header__nav ul li a:hover{
     letter-spacing: 0.7px;
 }
 
-.expertise__content .row:nth-child(2){
-    border-top:1px solid #ebebeb
-}
-
+.expertise__content .row .expertise-content__item:nth-child(1),
 .expertise__content .row .expertise-content__item:nth-child(2){
-    border-left: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
 }
+
+.expertise__content .row .expertise-content__item:nth-child(3){
+    border-bottom: 1px solid #ebebeb;
+}
+
+.expertise__content .row .expertise-content__item:nth-child(4),
+.expertise__content .row .expertise-content__item:nth-child(5){
+    border-right:1px solid #ebebeb
+}
+
+
 
 /* End of Expertise */
 
@@ -461,15 +503,26 @@ header .header__nav ul li a:hover{
 
 .team__cards{
     margin-bottom: 70px;
+    flex-wrap: nowrap;
+    justify-content:center
 }
 
 .team-cards__item{
-    border:1px solid #8a849d
+    border:1px solid #8a849d;
+    padding: 0;
+    margin-left: 10px;
 }
+
+.team-cards__item:first-child{
+    margin-left: 0;
+}
+
+
+
 
 .team-cards__photo{
     height: 230px;
-    width: 220px;
+    width: 100%;
     background:#fff;
     margin-bottom: 23px;
 }
@@ -549,6 +602,10 @@ header .header__nav ul li a:hover{
     margin: 70px 0;
 }
 
+#more-works{
+    margin-bottom: 20px;
+}
+
 /* End of Works */
 
 /* Testimonials */
@@ -556,12 +613,14 @@ header .header__nav ul li a:hover{
 .testimonials{
     text-align: center;
     background:url('../img/testimonials-bg.png') no-repeat;
+    background-size:cover;
     position: relative;
+    width: 100%;
 }
 
 .testimonials__wrapper{
     position: relative;
-    width: 780px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -813,9 +872,8 @@ footer .container{
     letter-spacing: 0.35px;
 }
 
-.footer__search{
-    padding-right: 0;
-}
+
+
 
 .footer-search__title{
     font-family: "Roboto";
@@ -828,7 +886,7 @@ footer .container{
     margin-bottom: 23px;
     color:#fff;
     font-weight: 500;
-    display: inline;
+    justify-content: center;
 }
 
 .footer-search__panel{
@@ -887,6 +945,7 @@ footer .container{
     top:50%;
     left: 50%;
     transform: translate(-50%,-45%);
+    color:#fff;
 }
 
 .footer__bottom{

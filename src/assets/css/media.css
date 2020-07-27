@@ -6,6 +6,12 @@
 }
 
 @media (max-width:992px){
+
+    .btn{
+        padding:5px 10px;
+        font-size: 12px;
+    }
+    /* Header */
     .header__nav{
         display:none
     }
@@ -28,6 +34,10 @@
         font-size: 27px;
     }
 
+    .header-content__btn{
+        margin-bottom: 150px;
+    }
+
     .line-header{
         margin: 0 auto 5px;
     }
@@ -36,11 +46,7 @@
         font-size: 12px;
     }
 
-    .btn{
-        padding:5px 10px;
-        font-size: 12px;
-        margin-bottom: 70px;
-    }
+
 
     /* Story */
 
@@ -54,6 +60,105 @@
         margin-left:0;
         margin-bottom: 10px;
     }
+
+    /* Expertise */
+
+    .expertise__content .row .expertise-content__item:nth-child(2){
+        border-right:none;
+    }
+
+    .expertise__content .row .expertise-content__item:nth-child(3){
+        border-right: 1px solid #ebebeb
+    }
+
+    .expertise__content .row .expertise-content__item:nth-child(4){
+        border-bottom:1px solid #ebebeb;
+        border-right:none;
+    }
+
+    /* Team */
+
+    .team__cards{
+        flex-wrap:wrap;
+        justify-content:space-around;
+        padding:0 20px;
+        line-height: 1.2rem;
+        
+    }
+
+    .team-cards__item:nth-child(3){
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .team-cards__item:last-child{
+        margin-top: 20px;
+    }
+
+    /* Contact */
+
+    .contact .left{
+        margin-bottom: 40px;
+    }
+
+    .clients__title{
+        text-align: center;
+    }
+
+    .clients__wrapper{
+        flex-wrap:wrap;
+    }
+
+    .clients__wrapper .row:first-child{
+        margin-bottom: 20px;
+    }
+
+    .clients__wrapper .row{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .clients__item{
+        display: flex;
+        align-items:center;
+        justify-content:center
+    }
+
+    .clients__item img{
+        width:100px;
+    }
+
+    /* Footer */
+
+    .footer .container{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+
+
+    .footer__info{
+        text-align: center;
+    }
+
+    .footer-info__logo{
+        justify-content: center;
+    }
+
+    .footer-adress__title, .footer-adress__text, .footer-adress__phone{
+        justify-content: center;
+    }
+
+    .footer-search__panel{
+        margin: 0 auto; 
+    }
+
+    .footer__social{
+        margin: 27px auto 0;
+    }
+
 }
+
+@media (max-width:720px)
 
 
