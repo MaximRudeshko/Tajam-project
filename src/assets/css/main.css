@@ -898,6 +898,8 @@ footer .container{
     line-height: 26px;
     font-weight: 300;
     letter-spacing: 0.35px;
+    text-decoration: none;
+
 }
 
 
@@ -967,6 +969,18 @@ footer .container{
     position: relative;
 }
 
+.social__link:hover i{
+    color:#00e0d0;
+    transition: all .2s linear;
+    cursor:pointer
+    
+}
+
+.social__link:hover{
+    border-color: #00e0d0;
+    transition: all .2s linear;
+}
+
 .social__link i{
     font-size: 15px;
     position: absolute;
@@ -989,6 +1003,12 @@ footer .container{
     justify-content:space-between;
     max-width: 300px;
     width:300px;
+    
+    
+}
+
+.footer__links li a:hover{
+    color:#00e0d0;
 }
 
 .footer__links li a{
@@ -998,6 +1018,8 @@ footer .container{
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0.35px;
+    transition: all .2s linear;
+    text-decoration: none;
 }
 
 .footer__bottom .right span{
