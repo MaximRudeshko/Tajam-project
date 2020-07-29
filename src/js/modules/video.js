@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'flex'
             document.body.style.overflow = 'hidden'
             const path = e.target.getAttribute('data-play')
-            console.log(e.target)
             createPlayer(path)
         })
     
@@ -33,10 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 videoId: url
             })
         }
-    
-       
-    
-        
     }
     
     playVideo()

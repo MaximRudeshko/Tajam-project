@@ -51,7 +51,7 @@ header .header__navbar{
     position: relative;
     flex-direction: column;
     justify-content:space-around;
-    z-index: 1000000000000000;
+    z-index: 1000;
 }
 
 header .burger.closes span:nth-child(1){
@@ -84,7 +84,7 @@ header .burger.closes span:nth-child(3){
     display: none;
     position: absolute;
     top: 40%;
-    left: 104%;
+    left: 110%;
     transition: all .2s ease;
     z-index: 1111;
 }
@@ -117,7 +117,7 @@ header .header__logo{
     display: flex;
 }
 
-header .header__logo .header-logo__title{
+.header-logo__title{
     font-family: 'Roboto', sans-serif;
     width: 73px;
     height: 29px;
@@ -165,12 +165,10 @@ header .header__nav ul li a:hover{
 }
 
 .header-content__slogan{
-    width: 510px;
-    height: 31px;
     color: #ffffff;
     font-family: "Playfair Display - Black";
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.32px;
 }
 
@@ -191,12 +189,15 @@ header .header__nav ul li a:hover{
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
-    margin-bottom: 50px;
-    
+    width:100%;
+    text-align: center;
+    margin: 0 auto 50px;
+    letter-spacing: 0.7px;
+    padding: 0 172px;
 }
 
 .header-content__btn{
-    margin-bottom: 207px;
+    margin-bottom: 127px;
 }
 
 
@@ -210,12 +211,26 @@ header .header__nav ul li a:hover{
     background:none;
     transition: all .2s linear;
     border-radius:0;
+    outline: none;
+}
+
+.header-content__btn a{
+    text-decoration: none;
+    color:#00e0d0;
 }
 
 .btn:hover{
-    color:#fff;
     background:#00e0d0;
+    color:#fff;
 }
+
+.btn:hover a{
+    color:#fff;
+}
+
+/* Modal */
+
+
 
 /* Slick */
 
@@ -292,7 +307,7 @@ header .slick-dots li.slick-active button{
 
 /* End of Header ---------------- */
 /* Story section----------------- */
-.story .story__wrapper{
+.story__wrapper{
     display: flex;
     padding-top: 70px;
     justify-content: space-between;
@@ -309,6 +324,7 @@ header .slick-dots li.slick-active button{
     font-size:22px;
     letter-spacing: 1.1px;
     margin-bottom: 25px;
+    font-weight: bold;
 }
 
 .story__text{
@@ -319,7 +335,7 @@ header .slick-dots li.slick-active button{
     margin-bottom: 31px;
 }
 
-.story button{
+.story__btn{
     margin-bottom:70px
 }
 
@@ -414,7 +430,7 @@ header .slick-dots li.slick-active button{
 }
 
 .expertise-content__item{
-    padding: 32px 33px 39px 23px;
+    padding: 32px;
 }
 
 .content-item__img{
@@ -475,7 +491,6 @@ header .slick-dots li.slick-active button{
     padding: 71px 0 69px;
     position: relative;
     text-align: center;
-    max-width: 970px !important
 }
 
 
@@ -528,6 +543,11 @@ header .slick-dots li.slick-active button{
     margin-bottom: 23px;
 }
 
+.team-cards__photo img{
+    width: 100%;
+    height: 100%;
+}
+
 .team-cards__name{
     font-family: "Roboto";
     color:#fff;
@@ -564,7 +584,7 @@ header .slick-dots li.slick-active button{
 }
 
 .works .container{
-    height: 157px;
+    padding:50px 0;
     display: flex;
     align-items:center;
     max-width: 970px !important
@@ -701,9 +721,16 @@ header .slick-dots li.slick-active button{
 }
 
 .testimonials-slider__items{
-    width:371px;
-    margin: 0 auto; 
+    width:100%;
     position: relative;
+}
+
+.testimonials-slider__item{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .testimonials .slick-arrow{
@@ -714,6 +741,12 @@ header .slick-dots li.slick-active button{
     width: 20px;
     height: 20px;
     border:none;
+}
+
+.testimonials-slider__item.slick-center img{
+    width: 70px;
+    height: 70px;
+    transition: all .2s linear;
 }
 
 .testimonials .slick-arrow.slick-next{
@@ -758,7 +791,7 @@ header .slick-dots li.slick-active button{
     flex-direction: column;
 }
 
-.form__title p{
+.form__title h2{
     color: #413d4b;
     font-family: "Playfair Display";
     font-size: 22px;
@@ -1030,6 +1063,87 @@ footer .container{
     line-height: 26px;
     letter-spacing: 0.35px;
 }
+
+/* Popup */
+
+.popup{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    visibility: hidden;
+    align-items:center;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    transition:all .2s linear;
+    z-index: 10000000;
+}
+
+.popup__close{
+    height: 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition:all .2s linear;
+    position: absolute;
+    top:30px;
+    right:30px;
+}
+
+.popup__close:hover{
+    transform: rotate(-360deg) ;
+    transform-origin: center;
+}
+
+.popup__close span{
+    height: 4px;
+    width:30px;
+    background-color:#fff;
+    border-radius:10px;
+}
+
+.popup__close span:first-child{
+    transform: translate(0, 13px) rotate(-45deg);
+}
+
+.popup__close span:last-child{
+    transform: translate(0, -13px) rotate(45deg)
+}
+
+
+
+.popup__content{
+    width:40%;
+    margin:0 auto;
+    padding:20px;
+    overflow: hidden;   
+}
+
+.popup__form{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-110%);
+    transition: all .2s ease;
+}
+
+.popup__form h2{
+    color:#fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup__form input{
+    margin-bottom: 20px;
+}
+
+.popup__form .btn{
+}
+
+
 
 
 
