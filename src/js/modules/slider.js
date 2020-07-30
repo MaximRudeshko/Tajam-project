@@ -2,7 +2,8 @@ $(document).ready(function () {
     $('.header-slider__inner').slick({
         arrows:false,
         dots:true,
-        autoplaySpeed:300
+        autoplay:true,
+        autoplaySpeed:3000
     })
 
     $('.testimonials__contentbox').slick({
