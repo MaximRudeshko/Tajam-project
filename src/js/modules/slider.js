@@ -4,6 +4,7 @@ $(document).ready(function () {
         dots:true,
         autoplaySpeed:300
     })
+
     $('.testimonials__contentbox').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -14,7 +15,7 @@ $(document).ready(function () {
 
 
     $('.testimonials-slider__items').slick({
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.testimonials__contentbox',
         arrows: false,

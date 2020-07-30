@@ -345,7 +345,7 @@ header .slick-dots li.slick-active button{
 
 .video{
     position: relative;
-    background: url(/assets/img/video-bg.png) no-repeat;
+    background: url('./assets/img/video-bg.png') no-repeat;
     background-size: cover;
     height:550px;
     display: flex;
