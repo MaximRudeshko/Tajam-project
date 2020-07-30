@@ -178,6 +178,25 @@
         font-size: 14px;
     }
 
+    /* UpElem */
+
+    .up-elem{
+        height: 30px;
+        width: 30px;
+    }
+
+    .up-elem span{
+        height: 5px;
+    }
+
+    .up-elem span:first-child {
+        transform: translate(4px) rotate(-45deg);
+    }
+
+    .up-elem span:last-child {
+        transform: translate(-4px) rotate(45deg);
+    }
+
 }
 
 @media (max-width:768px){
@@ -218,8 +237,7 @@
         height: 22px;
         font-size: 12px;
         margin-bottom: 10px;
-    }
-    
+    }    
 }
 
 @media (max-width:540px){
@@ -450,6 +468,21 @@
     .popup__form .btn {
         padding: 2px 10px;
         font-size: 10px;
+    }
+
+
+    /* upElem */
+
+    .up-elem span{
+        height: 3px;
+    }
+
+    .up-elem span:first-child {
+        transform: translate(2px) rotate(-45deg);
+    }
+
+    .up-elem span:last-child {
+        transform: translate(-3px) rotate(45deg);
     }
 }
 

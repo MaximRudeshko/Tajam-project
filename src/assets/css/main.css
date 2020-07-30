@@ -345,7 +345,7 @@ header .slick-dots li.slick-active button{
 
 .video{
     position: relative;
-    background: url('./assets/img/video-bg.png') no-repeat;
+    background: url('./../img/video-bg.png');
     background-size: cover;
     height:550px;
     display: flex;
@@ -1140,10 +1140,39 @@ footer .container{
     margin-bottom: 20px;
 }
 
-.popup__form .btn{
+/* UpElem */
+
+.up-elem{
+    width: 40px;
+    height: 40px;
+    background:#000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom:10%;
+    right:10%;
+    transition:all .2s linear;
+    opacity: 0;
+    visibility: hidden;
+    
 }
 
+.up-elem span{
+    height: 8px;
+    width: 25px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    
+}
 
+.up-elem span:first-child{
+    transform: translate(5px) rotate(-45deg);
+}
+.up-elem span:last-child{
+    transform: translate(-6px) rotate(45deg);
+}
 
 
 
